@@ -1,0 +1,113 @@
+body {
+  width: 75%;
+  margin: 20px auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.map_container {
+  background: url('nzmap.jpg') no-repeat 0px 0px;
+  height: 600px;
+  width: 433px;
+  position: relative;
+  /*color: #fff;*/
+  /*float: right;*/
+  /*margin: 0px 0px 0px 20px;*/
+}
+
+.header h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.map_container a.dot {
+  background: url('dots.png') no-repeat 0px 0px;
+  height: 20px;
+  width: 20px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+}
+.map_container a.dot:hover {
+  background-position: 0px -20px;
+}
+
+.map_container a.dot.selected {
+  background-position: 0px -40px;
+}
+
+.map_container .form_island {
+  position: absolute;
+  top: 25px;
+  left: 345px;
+}
+
+.map_container .form_island option {
+  font-family: 'Lato', sans-serif;
+}
+.map_container .form_island select {
+  width: 120px;
+  height: 30px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+}
+
+.map_container .clear_both { clear: both; line-height: 1px; }
+
+.map_container .detail_container {
+	position: absolute;
+	top: 25px;
+	left: 500px;
+	width: 300px;
+	height: 260px;
+}
+
+.map_container .walk_detail {
+	position: absolute;
+	top: 0px;
+	width: 290px;
+	padding: 0px 0px 0px 12px;
+	border-left: 1px solid #a9b5c8;
+	border-top: 1px solid #a9b5c8;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.map_container .walk_detail .walk_photo {
+	/*float: left;*/
+	margin: 10px 15px 10px 0px;
+  width: 250px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	box-shadow: 0px 5px 3px #4e5d74;
+	-webkit-box-shadow: 0px 5px 3px #4e5d74;
+	-moz-box-shadow: 0px 5px 3px #4e5d74;
+	-webkit-border-radius: 8px;
+}
+.map_container .walk_detail .walk_info {
+	width: 100%;
+	/*float: left;*/
+}
+
+.map_container .walk_info h2 {
+	margin: 0px 0px 5px 0px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.map_container .walk_info h3 {
+	margin: 0px 0px 12px 0px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #2c3748;
+}
+
+.map_container p {
+  margin: 0px 0px 12px 0px;
+}
+
+.walk_detail_container {
+  display: none;
+}
