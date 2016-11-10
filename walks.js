@@ -36,7 +36,7 @@ mapLabel.hide();
 var dot = $('.dot');
 
 dot.on('mouseenter mouseleave', function() {
-    $(this).find('p').toggle();
+    $(this).find('p').fadeToggle(2000);
 });
 
 });
