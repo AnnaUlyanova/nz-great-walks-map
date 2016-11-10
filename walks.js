@@ -28,5 +28,15 @@ $(document).ready(function() {
       });
     });
 
+var mapLabel = $('p.map_label');
+
+mapLabel.hide();
+//mapLabel.addClass('label_hide');
+
+var dot = $('.dot');
+
+dot.on('mouseenter mouseleave', function() {
+    $(this).find('p').toggle();
+});
 
 });

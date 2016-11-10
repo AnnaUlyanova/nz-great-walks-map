@@ -21,6 +21,12 @@ body {
   letter-spacing: 2px;
 }
 
+.map_label {
+  color: #000;
+  padding-left: 31px;
+  font-weight: bolder;
+}
+
 .map_container a.dot {
   background: url('dots.png') no-repeat 0px 0px;
   height: 20px;
