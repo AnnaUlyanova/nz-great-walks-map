@@ -5,17 +5,15 @@ $(document).ready(function() {
 //SHOW WALKS ON THE MAP BASED ON SELECTED ISLAND
     var selectedIsland = $('#mapForm option:selected').val();
 
-    if( selectedIsland == "ALL"){
+    if ( selectedIsland == "ALL") {
       $('a.dot').show(1000);
-    }else {
+    } else {
       $('a.dot[island*="'+selectedIsland+'"]').show(1000);
         $('a.dot[island!="'+selectedIsland+'"]').hide(1000);
     }
-
   });
 
   //SHOW WALK INFORMATION
-
     $('a.dot').click(function() {
       $('a.dot').removeClass('selected');
       $(this).addClass('selected');
@@ -28,7 +26,6 @@ $(document).ready(function() {
       // $('.detail_container').fadeOut(500, function(){
       //   $('.detail_container .walk_detail').html(htmlCode);
       //   $('.detail_container').fadeIn(500);
-
 
 
 //SHOW WALKS INFO VIA JS OBJECT
@@ -72,22 +69,14 @@ $(document).ready(function() {
         }
     ];
 
-
-
 var walk = 'walkArr['+$(this).attr('walk')+'].info';
 var htmlCode = eval(walk);
 
       $('.detail_container').fadeOut(500, function(){
         $('.detail_container .walk_detail').html(htmlCode);
         $('.detail_container').fadeIn(500);
-
-
-
-
       });
     });
-
-
 
 //ANIMATION ON THE MAP
 var mapLabel = $('p.map_label');
@@ -97,6 +86,5 @@ var dot = $('.dot');
 
 dot.on('mouseenter mouseleave', function() {
     $(this).find('p').fadeToggle(600);
-});
-
+  });
 });
