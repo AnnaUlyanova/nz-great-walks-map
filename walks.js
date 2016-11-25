@@ -33,49 +33,79 @@ $(document).ready(function() {
       var walkArr =  [
         {
           id: "waikaremoana",
-          info: "<div class='walk_detail' id='waikaremoana'><img class='walk_photo' src='images/waikaremoana.jpg' alt='waikaremoana' /> <div class='walk_info'><h2>Lake Waikaremoana Great Walk</h2> <h3>North Island</h3> <p>Trace the shoreline of Lake Waikaremoana, the 'sea of rippling waters.' Pass giant podocarp trees and remote beaches, and enjoy breathtaking views from Panekire Bluff.</p></div></div>",
+          image: "images/waikaremoana.jpg",
+          alt: "waikaremoana",
+          header: "Lake Waikaremoana Great Walk",
+          island: "North Island",
+          description: "Trace the shoreline of Lake Waikaremoana, the 'sea of rippling waters.' Pass giant podocarp trees and remote beaches, and enjoy breathtaking views from Panekire Bluff."
         },
         {
           id: "tongariro",
-          info: "<div class='walk_detail' id='tongariro'><img class='walk_photo' src='images/tongariro.jpg' alt='tongariro' /> <div class='walk_info'><h2>Tongariro Northern Circuit</h2> <h3>North Island</h3> <p>Explore the volcanic heart of Tongariro National Park, a landscape of stark glacial contrasts and alpine views. Journey through dramatic (and active!) volcanic landscapes, glacial valleys, native beech forest, alpine meadows and emerald coloured lakes.</p></div></div>",
+          image: "images/tongariro.jpg",
+          header: "Tongariro Northern Circuit",
+          island: "North Island",
+          description: "Explore the volcanic heart of Tongariro National Park, a landscape of stark glacial contrasts and alpine views. Journey through dramatic (and active!) volcanic landscapes, glacial valleys, native beech forest, alpine meadows and emerald coloured lakes."
         },
         {
           id: "whanganui",
-          info: "<div class='walk_detail' id='whanganui'><img class='walk_photo' src='images/whanganui.jpg' alt='whanganui' /> <div class='walk_info'><h2>Whanganui Journey</h2> <h3>North Island</h3> <p>Explore the scenic beauty paddling up the Whanganui River, a landscape of remote hills and bush clad valleys. Drift down the Wanganui River in a canoe or kayak.</p></div></div>",
+          image: "images/whanganui.jpg",
+          header: "Whanganui Journey",
+          island: "North Island",
+          description: "Explore the scenic beauty paddling up the Whanganui River, a landscape of remote hills and bush clad valleys. Drift down the Wanganui River in a canoe or kayak."
         },
         {
           id: "abel-tasman",
-          info: "<div class='walk_detail' id='abel-tasman'><img class='walk_photo' src='images/abel-tasman.jpg' alt='abel-tasman' /> <div class='walk_info'><h2>Abel Tasman Coast Track</h2> <h3>South Island</h3> <p>Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all. Keep an eye out for fur seals/kekeno.</p></div></div>",
+          image: "images/abel-tasman.jpg",
+          header: "Abel Tasman Coast Track",
+          island: "South Island",
+          description: "Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all. Keep an eye out for fur seals/kekeno."
         },
         {
           id: "heaphy",
-          info: "<div class='walk_detail' id='heaphy'><img class='walk_photo' src='images/heaphy.jpg' alt='heaphy' /> <div class='walk_info'><h2>Heaphy Track</h2> <h3>South Island</h3> <p>Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast. Look and listen out for great spotted kiwi/roa around Gouland Downs.</p></div></div>",
+          image: "images/heaphy.jpg",
+          header: "Heaphy Track",
+          island: "South Island",
+          description: "Travel through expansive tussock downs, lush forests and nīkau palms to the roaring seas of the West Coast. Look and listen out for great spotted kiwi/roa around Gouland Downs."
         },
         {
           id: "milford",
-          info: "<div class='walk_detail' id='milford'><img class='walk_photo' src='images/milford.jpg' alt='milford' /> <div class='walk_info'><h2>Milford Track</h2> <h3>South Island</h3> <p>Experience 'the finest walk in the world' as you retrace the steps of early explorers on the world-renowed Milford Track. Take a journey along valleys carved by glaciers, wander through ancient rainforests and admire cascading waterfalls.</p></div></div>",
+          image: "images/milford.jpg",
+          header: "Milford Track",
+          island: "South Island",
+          description: "Experience 'the finest walk in the world' as you retrace the steps of early explorers on the world-renowed Milford Track. Take a journey along valleys carved by glaciers, wander through ancient rainforests and admire cascading waterfalls."
         },
         {
           id: "routeburn",
-          info: "<div class='walk_detail' id='routeburn'><img class='walk_photo' src='images/routeburn.jpg' alt='routeburn' /> <div class='walk_info'><h2>Routeburn Track</h2> <h3>South Island</h3> <p>This is the ultimate alpine adventure, weaving through meadows, reflective tarns and alpine gardens. You'll be rewarded with spectacular vistas over vast mountain ranges and valleys.</p></div></div>",
+          image: "images/routeburn.jpg",
+          header: "Routeburn Track",
+          island: "South Island",
+          description: "This is the ultimate alpine adventure, weaving through meadows, reflective tarns and alpine gardens. You'll be rewarded with spectacular vistas over vast mountain ranges and valleys."
         },
         {
           id: "kepler",
-          info: "<div class='walk_detail' id='kepler'><img class='walk_photo' src='images/kepler.jpg' alt='kepler' /> <div class='walk_info'><h2>Kepler Track</h2> <h3>South Island</h3> <p>Vast tussock-covered ridgelines and spectacular alpine vistas contrast with peaceful lakeside and valley beech forest in this wilderness adventure.</p></div></div>",
+          image: "images/kepler.jpg",
+          header: "Kepler Track",
+          island: "South Island",
+          description: "Vast tussock-covered ridgelines and spectacular alpine vistas contrast with peaceful lakeside and valley beech forest in this wilderness adventure."
         },
         {
           id: "rakiura",
-          info: "<div class='walk_detail' id='rakiura'><img class='walk_photo' src='images/rakiura.jpg' alt='rakiura' /> <div class='walk_info'><h2>Rakiura Track</h2> <h3>South Island</h3> <p>Escape on an island adventure - relax and unwind in the peaceful surroundings with the bush, birds and beach at your side. Listen out for the Rakiura tokoeka/kiwi calling or look for its footprints.</p></div></div>",
+          image: "images/rakiura.jpg",
+          header: "Rakiura Track",
+          island: "Stewart Island",
+          description: "Escape on an island adventure - relax and unwind in the peaceful surroundings with the bush, birds and beach at your side. Listen out for the Rakiura tokoeka/kiwi calling or look for its footprints."
         }
     ];
 
-var walk = 'walkArr['+$(this).attr('walk')+'].info';
-var htmlCode = eval(walk);
+var i = $(this).attr('walk');
+var $div = $("<div>", {id: walkArr[i].id, class: 'walk_info'}, "</div>")
+     .html("<h2>" + walkArr[i].header + "</h2>" + "<h3>" + walkArr[i].island + "</h3>" + "<p>" + walkArr[i].description + "</p>");
+var $img = $("<img>", {src: walkArr[i].image, alt: walkArr[i].alt, class: 'walk_photo'});
 
-      $('.detail_container').fadeOut(500, function(){
-        $('.detail_container .walk_detail').html(htmlCode);
-        $('.detail_container').fadeIn(500);
-      });
+$('.detail_container h3, h2, p, img').fadeOut(1000, function(){
+    $('.detail_container').fadeIn(1000);
+    $('.detail_container .walk_detail').append($img, $div);
+        });
     });
 
 //ANIMATION ON THE MAP
