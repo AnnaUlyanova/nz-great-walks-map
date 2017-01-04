@@ -3,51 +3,58 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+
 		<title>Map of New Zealand's 9 Great Walks</title>
+
 		<link rel="stylesheet" type="text/css" href="walks.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="walks.js"></script>
+
 	</head>
 	<body>
-        <div class="header">
-            <h1>Map of New Zealand's 9 Great Walks</h1>
+				<div>
+            <h1 class="map-title">Map of New Zealand's 9 Great Walks</h1>
         </div>
+			<div class="container">
+			  <div class="map_container">
+		        <a class="dot" style="top:200px;  left:340px;" island="NI" walk="0"><p class="map_label">Lake Waikaremoana</p></a>
+		        <a class="dot" style="top:222px;  left:297px;" island="NI" walk="1"><p class="map_label">Tongariro Northern Circuit</p></a>
+		        <a class="dot" style="top:236px;  left:287px;" island="NI" walk="2"><p class="map_label">Whanganui Journey</p></a>
+		        <a class="dot" style="top:287px; left:208px;" island="SI" walk="3" ><p class="map_label">Abel Tasman Track</p></a>
+		        <a class="dot" style="top:311px; left:195px;" island="SI" walk="4"><p class="map_label">Heaphy Track</p></a>
+		        <a class="dot" style="top:445px; left:70px;" island="SI" walk="5"><p class="map_label">Milford Track</p></a>
+		        <a class="dot" style="top:450px;  left:87px;" island="SI" walk="6"><p class="map_label">Routeburn Track</p></a>
+		        <a class="dot" style="top:472px; left:69px;" island="SI" walk="7"><p class="map_label">Kepler Track</p></a>
+		        <a class="dot" style="top:537px;  left:69px;" island="ST" walk="8"><p class="map_label">Rakiura Track</p></a>
 
-      <div class="map_container">
-        <a class="dot" style="top:200px;  left:340px;" island="NI" walk="0"><p class="map_label">Lake Waikaremoana</p></a>
-        <a class="dot" style="top:222px;  left:297px;" island="NI" walk="1"><p class="map_label">Tongariro Northern Circuit</p></a>
-        <a class="dot" style="top:236px;  left:287px;" island="NI" walk="2"><p class="map_label">Whanganui Journey</p></a>
-        <a class="dot" style="top:287px; left:208px;" island="SI" walk="3" ><p class="map_label">Abel Tasman Track</p></a>
-        <a class="dot" style="top:311px; left:195px;" island="SI" walk="4"><p class="map_label">Heaphy Track</p></a>
-        <a class="dot" style="top:445px; left:70px;" island="SI" walk="5"><p class="map_label">Milford Track</p></a>
-        <a class="dot" style="top:450px;  left:87px;" island="SI" walk="6"><p class="map_label">Routeburn Track</p></a>
-        <a class="dot" style="top:472px; left:69px;" island="SI" walk="7"><p class="map_label">Kepler Track</p></a>
-        <a class="dot" style="top:537px;  left:69px;" island="ST" walk="8"><p class="map_label">Rakiura Track</p></a>
-
+				<div>
 
               <form id="mapForm" name="mapForm" class="form_island" method="post" action="">
-                  <select name="island" id="island">
-            <option value="NI">North Island</option>
-            <option value="SI">South Island</option>
-            <option value="ST">Stewart Island</option>
-            <option value="ALL" selected="selected">Show all walks</option>
-                  </select>
-            </form>
+                <select name="island" id="island">
+			            <option value="NI">North Island</option>
+			            <option value="SI">South Island</option>
+			            <option value="ST">Stewart Island</option>
+			            <option value="ALL" selected="selected">Show all walks</option>
+                </select>
+            	</form>
+				</div>
+					</div>
+
+		        <div class="detail_container">
+			        <div class="walk_detail">
+			          <h3>Click on location</h3>
+			          <p>Information is walking..</p>
+			        </div>
+		        </div>
 
 
-        <div class="detail_container">
-	        <div class="walk_detail">
-	          <h3>Click on location</h3>
-	          <p>Information is walking..</p>
-	        </div>
-        </div>
-
-      </div>
 
 			<footer>
-      <hr class="hr-main">
-      <span>by <a href="https://github.com/AnnaUlyanova" target="_blank">Anna Ulyanova</a></span>
-    </footer>
+	      <hr class="hr-main">
+	      <span>by <a href="https://github.com/AnnaUlyanova" target="_blank">Anna Ulyanova</a></span>
+    	</footer>
+		</div>
 	</body>
 </html>
